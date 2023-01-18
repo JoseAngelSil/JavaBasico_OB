@@ -3,14 +3,14 @@ package POO;
 /**
  * Clase de Coche para la creacion de objetos de la misma forma
  */
-public class Coche {
+public abstract class Coche { // Se crea como clase Abstract y no se puede crear objetos solamente de los hijos
     // Atributos
-    private String color;
-    private String fabricante;
-    private String modelo;
-    private Double peso;
+     String color;
+     String fabricante;
+     String modelo;
+     Double peso;
 
-    private Integer velocity = 0;
+     protected Integer velocity = 0;
 
     //constructores
      // sin constructor, se crea de forma default, es decir, que la clase esta vacia
@@ -26,6 +26,8 @@ public class Coche {
      * @param peso
      * Double de peso del coche
      */
+    public Coche(){
+    }
     public Coche (String color, String fabricante, String modelo, Double peso){
         this.color = color;
         this.fabricante = fabricante;
