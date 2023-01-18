@@ -1,7 +1,7 @@
 package POO;
 
 public class DiselCar extends Coche{
-    short cantDisel = 0;
+    double cantDisel = 0;
     public DiselCar(){ //Constructor de ElectricCar
     }
 
@@ -12,7 +12,7 @@ public class DiselCar extends Coche{
     public DiselCar(short cantDisel){ //Constructor de ElectricCar con el motor
         this.cantDisel = cantDisel;
     }
-    public DiselCar(String color, String fabricante, String modelo, Double peso,short cantDisel){
+    public DiselCar(String color, String fabricante, String modelo, Double peso,Double cantDisel){
         super(color, fabricante, modelo, peso);
         this.cantDisel = cantDisel;
     }
